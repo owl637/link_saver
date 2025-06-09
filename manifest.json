@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Save URL as Shortcut",
+  "version": "1.0",
+  "description": "現在のページやリンクのURLをショートカットファイルとして保存するChrome拡張機能",
+  "permissions": [
+    "downloads",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "このページのURLを保存",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
